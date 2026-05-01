@@ -5,6 +5,8 @@ For each model response, the code extracts four output-side features which inclu
 
 The experiments compare single-feature baselines against a multi-signal MLP detector across Llama, Mistral, and Gemma model outputs.
 
+A more indepth analysis can be found in the <a href="./Cross-Model_Transferability_of_Hallucination_Signals_in_LLMs.pdf" target="_blank">Cross-Model Transferability of Hallucination Signals in Large Language Models</a> paper.
+
 Original models and the dataset can be found below:
 - CommonsenseQA: https://huggingface.co/datasets/tau/commonsense_qa
 - Gemma 2: https://huggingface.co/google/gemma-2-9b-it
