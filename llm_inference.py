@@ -228,17 +228,9 @@ MODEL_CONFIGS = [
     },
 ]
 
-# SPLITS = {
-#     "train": ds["train"],
-#     "validation": ds["validation"],
-# }
-
-SMOKE_TEST = True
-SMOKE_N = 100
-
 SPLITS = {
-    "train": ds["train"].select(range(SMOKE_N)) if SMOKE_TEST else ds["train"],
-    "validation": ds["validation"].select(range(SMOKE_N)) if SMOKE_TEST else ds["validation"],
+    "train": ds["train"],
+    "validation": ds["validation"],
 }
 
 for cfg in MODEL_CONFIGS:
